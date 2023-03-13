@@ -1,0 +1,15 @@
+###Clone Project: git clone 
+npm i
+
+###Create Project
+npx test-project
+cd test-project
+
+npm i -D react-test-renderer jest babel-jest @babel/preset-env @babel/preset-react enzyme @cfaester/enzyme-adapter-react-18
+
+###Config setupTests.js 
+import { configure } from 'enzyme';
+import Adapter from '@cfaester/enzyme-adapter-react-18';
+configure({ adapter: new Adapter() });
+
+### Run Testing: npm test
